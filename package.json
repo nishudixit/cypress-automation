@@ -1,0 +1,28 @@
+{
+  "name": "cypress-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "rimraf mochawesome-report && rimraf mochawesome.json",
+    "test": "node_modules\\.bin\\cypress run",
+    "kart": "npm run test -- --spec \"cypress/integration/kart/*\"",
+    "headed": "npm run test -- --headed",
+    "chrome": "npm run test -- --headed --browser chrome",
+    "record-dashboard-test": "npm run test -- --record --key c55edfa4-1885-41de-98c7-393a00ab67a5",
+    "mochawesome-report": "npm run test -- --reporter mochawesome",
+    "merge-reports": "mochawesome-merge mochawesome-report/*.json > mochawesome.json",
+    "generate-report": "marge mochawesome.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "rimraf": "3.0.2",
+    "cypress": "9.7.0",
+    "mocha": "10.0.0",
+    "mochawesome": "7.1.3",
+    "mochawesome-merge": "4.2.1"
+  }
+}

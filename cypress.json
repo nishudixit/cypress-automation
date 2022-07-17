@@ -1,0 +1,14 @@
+{
+    "defaultCommandTimeout": 40000,
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "mochawesome-report"
+    },
+    "env": {
+        "url": "https://rahulshettyacademy.com/angularpractice/"
+    },
+    "projectId": "ixi1s8"
+}
